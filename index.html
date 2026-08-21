@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & DISCOVERABILITY META TAGS -->
+    <title>Sanskar Bhandari — Computer Science &amp; AI/ML Developer</title>
+    <meta name="description" content="Personal Developer Portfolio of Sanskar Bhandari. B.Tech Computer Science &amp; Engineering student at VIT Pune specializing in AI/ML, Medical Computer Vision, NLP, and Full-Stack Software Engineering." />
+    <meta name="keywords" content="Sanskar Bhandari, AI Developer, ML Engineer, Computer Science, VIT Pune, ScriptCare, PulmoScan AI, LocalXplorer, Python, PyTorch, React" />
+    <meta name="author" content="Sanskar Bhandari" />
+    <meta name="theme-color" content="#080c14" />
+
+    <!-- OPEN GRAPH FOR LINKEDIN / TWITTER / WHATSAPP PREVIEWS -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sanskar Bhandari — Computer Science &amp; AI/ML Developer" />
+    <meta property="og:description" content="Building practical software applications, medical vision systems, NLP pipelines, and IoT platforms." />
+    <meta property="og:url" content="https://sanskarbhandari.dev" />
+    <meta property="og:image" content="https://sanskarbhandari.dev/og-image.jpg" />
+
+    <!-- SCHEMA.ORG PERSON STRUCTURED DATA FOR SEARCH ENGINES -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sanskar Bhandari",
+      "jobTitle": "Computer Science & AI/ML Developer",
+      "alumniOf": "Vishwakarma Institute of Technology, Pune",
+      "email": "sanskarbhandari01@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://github.com",
+        "https://linkedin.com"
+      ]
+    }
+    </script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- BOOTSTRAP 5 & ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="style.css?v=indigo_cyan_2026" rel="stylesheet" />
+    <style>
+      html, body { background-color: #070a12 !important; color: #cbd5e1 !important; }
+      section { background-color: #070a12 !important; }
+      p, .text-body, .text-muted, .small { color: #cbd5e1 !important; opacity: 1 !important; font-size: 1.02rem; }
+      .bg-surface { background-color: #0f172a !important; }
+      .text-cyan { color: #00f2fe !important; }
+      .coral-dot { background-color: #00f2fe !important; box-shadow: 0 0 12px #00f2fe !important; }
+      .btn-coral { background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%) !important; border: none !important; box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35) !important; }
+      .btn-coral:hover { background: linear-gradient(135deg, #4f46e5 0%, #00f2fe 100%) !important; box-shadow: 0 0 25px rgba(0, 242, 254, 0.4) !important; }
+      .btn-outline-coral { border-color: rgba(0, 242, 254, 0.4) !important; color: #ffffff !important; }
+      .btn-outline-coral:hover { background: rgba(0, 242, 254, 0.12) !important; color: #00f2fe !important; border-color: #00f2fe !important; }
+      .hero-status-tag { color: #00f2fe !important; background: rgba(0, 242, 254, 0.12) !important; border-color: rgba(0, 242, 254, 0.4) !important; }
+      .hero-avatar-box { color: #00f2fe !important; background: rgba(0, 242, 254, 0.12) !important; border-color: #00f2fe !important; box-shadow: 0 0 35px rgba(0, 242, 254, 0.3) !important; }
+      .hero-profile-card:hover { border-color: #00f2fe !important; box-shadow: 0 0 30px rgba(0, 242, 254, 0.25) !important; }
+      .hero-profile-sub { color: #00f2fe !important; }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="visually-hidden-focusable p-2 bg-primary text-white position-absolute top-0 start-0 z-3">Skip to main content</a>
+
+    <!-- TOP UTILITY HEADER -->
+    <header class="fixed-top w-100">
+      <div class="utility-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div>Vishwakarma Institute of Technology, Pune</div>
+          <div>B.Tech CSE (AI &amp; ML) &middot; Academic Portfolio &middot; 2024–2028</div>
+        </div>
+      </div>
+
+      <!-- MAIN NAVIGATION -->
+      <nav id="main-nav" class="navbar navbar-expand-lg main-header" aria-label="Main Navigation">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-3" href="#hero" aria-label="Sanskar Bhandari Home">
+            <!-- REDESIGNED UNMISTAKABLE SB MONOGRAM LOGO -->
+            <div class="brand-mark-wrap">
+              <svg class="brand-mark-svg" width="40" height="40" style="width:40px; height:40px; min-width:40px; min-height:40px;" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SB Logo">
+                <rect width="40" height="40" rx="9" fill="#0F172A"/>
+                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="8.25" stroke="#00F2FE" stroke-width="1.5" stroke-opacity="0.9"/>
+                <!-- Unmistakable Bold White 'S' -->
+                <path d="M17 12H12.5C11.1193 12 10 13.1193 10 14.5C10 15.8807 11.1193 17 12.5 17H15.5C16.8807 17 18 18.1193 18 19.5C18 20.8807 16.8807 22 15.5 22H11" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Unmistakable Bold Cyan 'B' -->
+                <path d="M21 12H25.5C26.8807 12 28 13.1193 28 14.5C28 15.8807 26.8807 17 25.5 17H21V12Z" stroke="#00F2FE" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 17H26C27.3807 17 28.5 18.1193 28.5 19.5C28.5 20.8807 27.3807 22 26 22H21V17Z" stroke="#00F2FE" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 12V22" stroke="#00F2FE" stroke-width="2.8" stroke-linecap="round"/>
+                <circle cx="31.5" cy="8.5" r="2" fill="#6366F1"/>
+              </svg>
+              <div class="d-flex flex-column">
+                <span class="brand-name">Sanskar Bhandari</span>
+                <span class="brand-sub">CS &amp; AI/ML Developer</span>
+              </div>
+            </div>
+          </a>
+
+          <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2 text-white"></i>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="navbar-nav gap-1 gap-lg-3 align-items-center">
+              <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item ms-lg-2">
+                <button class="btn nav-cta-resume" data-bs-toggle="modal" data-bs-target="#resumeModal"><i class="bi bi-file-earmark-person me-1"></i> Resume</button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-cta" href="#contact">Let's Talk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- 1. HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <!-- LEFT COLUMN: COPY + CTAS -->
+            <div class="col-lg-7 hero-copy">
+              <div class="hero-status-tag">
+                <span class="coral-dot"></span> Open to AI/ML &amp; Software Engineering Roles
+              </div>
+              <div class="kicker-line">Hello, I'm Sanskar</div>
+              <h1>I Build AI &amp; <br><span class="text-coral">Software Systems.</span></h1>
+              <p class="hero-lead">Computer Science &amp; AI/ML student at VIT Pune. I build practical software applications, medical vision systems, NLP pipelines, and IoT platforms—transforming computer science fundamentals into production-grade solutions.</p>
+              
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-coral me-2">View My Work <i class="bi bi-arrow-down-right ms-1"></i></a>
+                <button class="btn btn-outline-coral me-2" data-bs-toggle="modal" data-bs-target="#resumeModal"><i class="bi bi-download me-1"></i> Resume (CV)</button>
+              </div>
+
+              <!-- DIRECT PROOF LINKS -->
+              <div class="d-flex align-items-center gap-3 pt-2">
+                <span class="text-muted small font-mono">Connect:</span>
+                <a href="mailto:sanskarbhandari01@gmail.com" class="text-white hover-coral me-2" aria-label="Email Sanskar"><i class="bi bi-envelope-fill fs-5"></i></a>
+                <a href="https://github.com" target="_blank" class="text-white hover-coral me-2" aria-label="GitHub Profile"><i class="bi bi-github fs-5"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="text-white hover-coral" aria-label="LinkedIn Profile"><i class="bi bi-linkedin fs-5"></i></a>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: RESTRAINED DEVELOPER PROFILE CARD -->
+            <div class="col-lg-5">
+              <div class="hero-profile-card">
+                <div class="hero-avatar-box">
+                  <i class="bi bi-cpu-fill"></i>
+                </div>
+                <h3 class="hero-profile-name">Sanskar Bhandari</h3>
+                <div class="hero-profile-sub">B.Tech CSE (AI &amp; ML) &middot; VIT Pune</div>
+                <p class="text-muted small mb-4">Focused on Machine Learning, Computer Vision, and Full-Stack Engineering.</p>
+                <div class="hero-meta-row">
+                  <div class="hero-meta-item">
+                    <span class="hero-meta-val">8.21</span>
+                    <span class="hero-meta-lbl">CGPA</span>
+                  </div>
+                  <div class="hero-meta-item">
+                    <span class="hero-meta-val">02</span>
+                    <span class="hero-meta-lbl">Pubs &amp; Patents</span>
+                  </div>
+                  <div class="hero-meta-item">
+                    <span class="hero-meta-val">06+</span>
+                    <span class="hero-meta-lbl">Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. TRUST / QUICK CAPABILITY CARDS -->
+      <section class="trust-strip">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="trust-card">
+                <div class="trust-icon"><i class="bi bi-eye"></i></div>
+                <div>
+                  <div class="trust-title">Applied AI &amp; Vision</div>
+                  <div class="trust-sub">Medical imaging, PyTorch, Gemini, YOLOv8</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="trust-card">
+                <div class="trust-icon"><i class="bi bi-code-slash"></i></div>
+                <div>
+                  <div class="trust-title">Full-Stack Software</div>
+                  <div class="trust-sub">React.js, Node.js, FastAPI REST APIs</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="trust-card">
+                <div class="trust-icon"><i class="bi bi-cpu"></i></div>
+                <div>
+                  <div class="trust-title">Systems &amp; Edge IoT</div>
+                  <div class="trust-sub">ESP32 telemetry, Random Forest alerts, C/C++</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. ABOUT SECTION -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 fade-right">
+              <div class="kicker-line">About Me <span class="coral-dot"></span></div>
+              <h2 class="mb-4">Engineering Practical Software from First Principles</h2>
+              <p class="text-body mb-4">I am a Computer Science &amp; Engineering student specializing in AI &amp; ML at Vishwakarma Institute of Technology, Pune. I bridge the gap between AI research and production software—building reliable systems validated through peer-reviewed papers, patents, and live applications.</p>
+              <p class="text-muted mb-4">My core developer philosophy centers on clean architecture, verifiable results, and building software that solves genuine user problems.</p>
+              <div class="d-flex gap-3">
+                <a href="#projects" class="btn btn-coral">Explore Projects <i class="bi bi-arrow-right ms-1"></i></a>
+                <button class="btn btn-outline-coral" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resume</button>
+              </div>
+            </div>
+
+            <div class="col-lg-6 fade-left">
+              <div class="about-info-card">
+                <h4 class="text-white mb-4"><i class="bi bi-person-vcard text-coral me-2"></i>Quick Overview</h4>
+                <div class="info-row">
+                  <span class="info-label">Education</span>
+                  <span class="info-value">B.Tech CSE (AI &amp; ML), VIT Pune</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Academic Track</span>
+                  <span class="info-value">2024–2028 (CGPA 8.21 / 10)</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Pune, Maharashtra, India</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Current Goal</span>
+                  <span class="info-value text-coral">AI/ML &amp; Software Roles</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Key Strengths</span>
+                  <span class="info-value">PyTorch, FastAPI, React, Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. SKILLS SECTION -->
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <div class="text-center mb-5 fade-up">
+            <div class="kicker-line mx-auto">Technical Skills <span class="coral-dot"></span></div>
+            <h2 class="mb-3">Verified Technical Stack</h2>
+            <p class="text-muted mx-auto" style="max-width: 580px;">Categorized software engineering skills, frameworks, and databases used across my published projects.</p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Programming Languages -->
+            <div class="col-md-6 col-lg-3 fade-up">
+              <div class="skill-category-card">
+                <h4 class="skill-cat-title"><i class="bi bi-code-slash"></i> Languages</h4>
+                <div class="skills-pill-wrap">
+                  <span class="skill-pill">Java</span>
+                  <span class="skill-pill">C</span>
+                  <span class="skill-pill">C++</span>
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">JavaScript</span>
+                  <span class="skill-pill">TypeScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Core Computer Science -->
+            <div class="col-md-6 col-lg-3 fade-up">
+              <div class="skill-category-card">
+                <h4 class="skill-cat-title"><i class="bi bi-gear-wide-connected"></i> Core CS</h4>
+                <div class="skills-pill-wrap">
+                  <span class="skill-pill">Data Structures (DSA)</span>
+                  <span class="skill-pill">Algorithms</span>
+                  <span class="skill-pill">OOP Architecture</span>
+                  <span class="skill-pill">Database Design</span>
+                  <span class="skill-pill">Backend Services</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web & Frameworks -->
+            <div class="col-md-6 col-lg-3 fade-up">
+              <div class="skill-category-card">
+                <h4 class="skill-cat-title"><i class="bi bi-layers"></i> Web &amp; Frameworks</h4>
+                <div class="skills-pill-wrap">
+                  <span class="skill-pill">React.js</span>
+                  <span class="skill-pill">React 18</span>
+                  <span class="skill-pill">Node.js</span>
+                  <span class="skill-pill">Express</span>
+                  <span class="skill-pill">FastAPI</span>
+                  <span class="skill-pill">HTML5</span>
+                  <span class="skill-pill">CSS3</span>
+                  <span class="skill-pill">PWA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- AI/ML, Tools & IoT -->
+            <div class="col-md-6 col-lg-3 fade-up">
+              <div class="skill-category-card">
+                <h4 class="skill-cat-title"><i class="bi bi-cpu"></i> AI, Tools &amp; IoT</h4>
+                <div class="skills-pill-wrap">
+                  <span class="skill-pill">Computer Vision</span>
+                  <span class="skill-pill">NLP</span>
+                  <span class="skill-pill">YOLOv8-Nano</span>
+                  <span class="skill-pill">TrOCR</span>
+                  <span class="skill-pill">BioClinicalBERT</span>
+                  <span class="skill-pill">Google Gemini</span>
+                  <span class="skill-pill">Random Forest</span>
+                  <span class="skill-pill">MySQL</span>
+                  <span class="skill-pill">Firebase</span>
+                  <span class="skill-pill">ESP32</span>
+                  <span class="skill-pill">Git</span>
+                  <span class="skill-pill">GitHub</span>
+                  <span class="skill-pill">VS Code</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. FEATURED PROJECTS SECTION (STAR FRAMING) -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="text-center mb-5 fade-up">
+            <div class="kicker-line mx-auto">Selected Work <span class="coral-dot"></span></div>
+            <h2 class="mb-3">Interview-Ready Project Case Studies</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">Structured using Situation, Task, Action, and Result (STAR) framing for technical evaluation.</p>
+          </div>
+
+          <!-- PROJECT 1: ScriptCare -->
+          <div class="project-card-large fade-up">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <div class="project-num">PROJECT 01 &middot; AI/ML + FULL STACK</div>
+                <h3 class="project-title-large">ScriptCare — AI Prescription Analyser</h3>
+                
+                <div class="star-block">
+                  <div class="star-label">Situation / Problem</div>
+                  <p class="star-text">Medication dispensation errors caused by illegible handwritten doctor prescriptions in clinical workflows.</p>
+                </div>
+                
+                <div class="star-block">
+                  <div class="star-label">Task</div>
+                  <p class="star-text">Build an automated end-to-end multi-stage AI pipeline to detect, recognize, extract, and cross-validate handwritten prescriptions.</p>
+                </div>
+
+                <div class="star-block">
+                  <div class="star-label">Action &amp; Architecture</div>
+                  <p class="star-text">Engineered a 5-stage pipeline: YOLOv8-Nano bounding box region detection, TrOCR optical character recognition, BioClinicalBERT NER medication entity extraction, and fuzzy matching against a 280K drug database via FastAPI REST API.</p>
+                </div>
+
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p class="star-text">Achieved 91% drug entity extraction accuracy with 0.87 F1 score. Research paper submitted to ICSCSD 2026.</p>
+                </div>
+
+                <div class="tag-pills">
+                  <span class="tag-pill">YOLOv8</span>
+                  <span class="tag-pill">TrOCR</span>
+                  <span class="tag-pill">BioClinicalBERT</span>
+                  <span class="tag-pill">FastAPI</span>
+                  <span class="tag-pill">React</span>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button class="btn btn-coral project-details-btn" data-project='{"title":"ScriptCare — AI Prescription Analyser","problem":"High rate of medication errors caused by illegible handwritten doctor prescriptions.","solution":"5-stage Computer Vision + NLP + REST API validation pipeline.","features":"YOLOv8 bounding detection, TrOCR OCR, BioClinicalBERT NER, 280K drug DB fuzzy matching.","stack":"YOLOv8, TrOCR, BioClinicalBERT, FastAPI, React","academic":"Innovation Project","outcome":"91% drug accuracy, 0.87 F1 score — paper submitted to ICSCSD 2026."}'>View Full Case Study &rarr;</button>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="code-terminal-box">
+                  <div class="terminal-header">
+                    <div class="t-dot t-dot-red"></div>
+                    <div class="t-dot t-dot-yellow"></div>
+                    <div class="t-dot t-dot-green"></div>
+                    <span class="terminal-title">scriptcare_pipeline.py</span>
+                  </div>
+                  <div class="terminal-body">
+<span class="c-comment"># Stage 1: YOLOv8 Bounding Detection</span>
+<span class="c-keyword">bbox</span> = detector.<span class="c-func">detect_regions</span>(prescription_img)
+
+<span class="c-comment"># Stage 2 & 3: TrOCR + BioClinicalBERT</span>
+<span class="c-keyword">raw_text</span> = trocr.<span class="c-func">recognize</span>(bbox)
+<span class="c-keyword">entities</span> = bert_ner.<span class="c-func">extract_meds</span>(raw_text)
+
+<span class="c-comment"># Stage 4: 280K Drug DB Validation</span>
+<span class="c-keyword">validated</span> = drug_db.<span class="c-func">validate</span>(entities)
+<span class="c-keyword">print</span>(<span class="c-string">"Accuracy: 91% | F1: 0.87"</span>)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: PulmoScan AI -->
+          <div class="project-card-large fade-up">
+            <div class="row g-4 align-items-center flex-row-reverse">
+              <div class="col-lg-7">
+                <div class="project-num">PROJECT 02 &middot; MEDICAL VISION AI</div>
+                <h3 class="project-title-large">PulmoScan AI — Lung Cancer Medical Imaging</h3>
+                
+                <div class="star-block">
+                  <div class="star-label">Situation / Problem</div>
+                  <p class="star-text">80% of lung cancer cases in regional clinics are diagnosed at late stages due to screening delays and radiologist shortages.</p>
+                </div>
+                
+                <div class="star-block">
+                  <div class="star-label">Task</div>
+                  <p class="star-text">Develop an AI medical imaging tool capable of providing automated early screening on chest X-rays and CT scans.</p>
+                </div>
+
+                <div class="star-block">
+                  <div class="star-label">Action &amp; Architecture</div>
+                  <p class="star-text">Integrated Google Gemini multimodal vision model into a React dashboard providing real-time risk heatmap overlays, severity scoring, and patient record management.</p>
+                </div>
+
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p class="star-text">Peer-reviewed research paper published at ICTEAH 2026 conference (KJ Somaiya College).</p>
+                </div>
+
+                <div class="tag-pills">
+                  <span class="tag-pill">React.js</span>
+                  <span class="tag-pill">Google Gemini</span>
+                  <span class="tag-pill">Computer Vision</span>
+                  <span class="tag-pill">Firebase</span>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button class="btn btn-coral project-details-btn" data-project='{"title":"PulmoScan AI","problem":"Late-stage lung cancer diagnosis due to screening barriers.","solution":"Gemini-powered multimodal chest X-ray & CT diagnostic dashboard.","features":"Diagnostic heatmaps, severity scoring, patient registry.","stack":"React.js, Google Gemini, Computer Vision, Firebase","academic":"Applied Science Project","outcome":"Published Paper at ICTEAH 2026."}'>View Full Case Study &rarr;</button>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="visual-mock-box text-center">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="badge bg-danger">Published Paper</span>
+                    <span class="font-mono text-muted small">ICTEAH 2026</span>
+                  </div>
+                  <div class="py-4">
+                    <i class="bi bi-hospital fs-1 text-coral mb-3 d-block"></i>
+                    <h5 class="text-white">Multimodal Scan Analyzer</h5>
+                    <p class="text-muted small mb-0">Automated Risk Heatmaps &middot; Severity Scoring &middot; Patient Registry</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: LocalXplorer PWA -->
+          <div class="project-card-large fade-up">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <div class="project-num">PROJECT 03 &middot; FULL STACK / PWA</div>
+                <h3 class="project-title-large">LocalXplorer — Cultural Discovery PWA</h3>
+                
+                <div class="star-block">
+                  <div class="star-label">Situation / Problem</div>
+                  <p class="star-text">Fragmented city heritage guidance and lack of offline transit route intelligence for Pune visitors.</p>
+                </div>
+
+                <div class="star-block">
+                  <div class="star-label">Action &amp; Architecture</div>
+                  <p class="star-text">Built a Progressive Web App with service workers for full offline heritage exploration, location intelligence, and integrated metro transit route mapping.</p>
+                </div>
+
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p class="star-text">Live production PWA deployed on Firebase Hosting (`localxplorer.web.app`).</p>
+                </div>
+
+                <div class="tag-pills">
+                  <span class="tag-pill">React 18</span>
+                  <span class="tag-pill">TypeScript</span>
+                  <span class="tag-pill">Firebase</span>
+                  <span class="tag-pill">PWA</span>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <a href="https://localxplorer.web.app" target="_blank" class="btn btn-coral">Live Project ↗</a>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="visual-mock-box text-center">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="badge bg-success">Live PWA</span>
+                    <span class="font-mono text-muted small">localxplorer.web.app</span>
+                  </div>
+                  <div class="py-4">
+                    <i class="bi bi-compass-fill fs-1 text-coral mb-3 d-block"></i>
+                    <h5 class="text-white">Smart Mobility &amp; Heritage</h5>
+                    <p class="text-muted small mb-0">Offline Service Workers &middot; Location Intelligence &middot; Transit Maps</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: NEXORA Health -->
+          <div class="project-card-large fade-up">
+            <div class="row g-4 align-items-center flex-row-reverse">
+              <div class="col-lg-7">
+                <div class="project-num">PROJECT 04 &middot; IOT &amp; ML TELEMETRY</div>
+                <h3 class="project-title-large">NEXORA Health — IoT Vitals Anomaly Detection</h3>
+                
+                <div class="star-block">
+                  <div class="star-label">Situation / Problem</div>
+                  <p class="star-text">High cost of hospital ICU telemetry equipment makes continuous remote patient monitoring inaccessible.</p>
+                </div>
+
+                <div class="star-block">
+                  <div class="star-label">Action &amp; Architecture</div>
+                  <p class="star-text">Interfaced MAX30102, MPU6050, and DHT11 sensors with ESP32 microcontroller, streaming telemetry via Python serial to FastAPI backend powered by Random Forest ML anomaly detection model.</p>
+                </div>
+
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p class="star-text">Official Patent Published in 2025 at VIT Pune.</p>
+                </div>
+
+                <div class="tag-pills">
+                  <span class="tag-pill">ESP32</span>
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">FastAPI</span>
+                  <span class="tag-pill">Random Forest</span>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button class="btn btn-coral project-details-btn" data-project='{"title":"NEXORA Health","problem":"Inaccessibility of ICU monitoring equipment for remote tracking.","solution":"ESP32 hardware telemetry + Random Forest ML emergency alert system.","features":"Pulse oximetry, fall detection, live telemetry stream.","stack":"ESP32, Python, FastAPI, Random Forest","academic":"Innovation Project","outcome":"Patent Published 2025."}'>View Full Case Study &rarr;</button>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="visual-mock-box text-center">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="badge bg-warning text-dark">Patent Published</span>
+                    <span class="font-mono text-muted small">VIT Pune 2025</span>
+                  </div>
+                  <div class="py-4">
+                    <i class="bi bi-activity fs-1 text-coral mb-3 d-block"></i>
+                    <h5 class="text-white">IoT Telemetry System</h5>
+                    <p class="text-muted small mb-0">MAX30102 + ESP32 &middot; FastAPI Serial Stream &middot; Real-Time Alerts</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 6. EXPERIENCE & JOURNEY SECTION -->
+      <section id="experience" class="archive-section">
+        <div class="container">
+          <div class="text-center mb-5 fade-up">
+            <div class="kicker-line mx-auto">Experience &amp; Journey <span class="coral-dot"></span></div>
+            <h2 class="mb-3">Academic &amp; Professional Milestones</h2>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-8 fade-up">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">JULY 2025</div>
+                <h4 class="timeline-title">Artificial Intelligence Intern &middot; Deevelo X</h4>
+                <p class="text-muted small">Completed AI Mentorship &amp; Internship Program. Gained practical experience in Artificial Intelligence concepts, computer vision pipelines, and machine learning applications. (Certificate ID: LED007-INT0032)</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025 &ndash; 2026</div>
+                <h4 class="timeline-title">Publications &amp; Patents Published</h4>
+                <p class="text-muted small">Published research paper at ICTEAH 2026 conference (PulmoScan AI) and published patent for IoT patient monitoring system (NEXORA Health) at VIT Pune.</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">AUGUST 2025</div>
+                <h4 class="timeline-title">Mathematics for AI &amp; ML Certification &middot; Udemy</h4>
+                <p class="text-muted small">Eduonix Learning Solutions. Advanced course covering linear algebra, multivariable calculus, probability distributions, and gradient optimization.</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 &ndash; 2028</div>
+                <h4 class="timeline-title">B.Tech CSE (AI &amp; ML) &middot; VIT Pune</h4>
+                <p class="text-muted small">Vishwakarma Institute of Technology, Pune. Maintaining an 8.21 / 10 CGPA across computer science core fundamentals and AI specialization courses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. CONTACT SECTION -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6 fade-right">
+              <div class="kicker-line">Let's Build Something <span class="coral-dot"></span></div>
+              <h2 class="display-5 fw-bold text-white mb-4">Interested in working together?</h2>
+              <p class="text-body mb-4">Open to software engineering internships, AI/ML research roles, and technical collaborations.</p>
+              
+              <div class="mb-4">
+                <p class="text-muted mb-2"><i class="bi bi-envelope-fill text-coral me-2"></i> sanskarbhandari01@gmail.com</p>
+                <p class="text-muted mb-2"><i class="bi bi-geo-alt-fill text-coral me-2"></i> Pune, Maharashtra, India</p>
+                <p class="text-muted"><i class="bi bi-building-fill text-coral me-2"></i> VIT Pune, B.Tech CSE (AI &amp; ML)</p>
+              </div>
+
+              <div class="d-flex gap-3">
+                <a href="mailto:sanskarbhandari01@gmail.com" class="btn btn-coral"><i class="bi bi-envelope me-2"></i>Email Directly</a>
+                <button class="btn btn-outline-coral" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resume</button>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 fade-left">
+              <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Sanskar will respond to your message shortly.');">
+                <div class="contact-input-group">
+                  <label class="contact-input-label">Your Name</label>
+                  <input type="text" class="contact-input" placeholder="e.g. Sarah Jenkins" required />
+                </div>
+                <div class="contact-input-group">
+                  <label class="contact-input-label">Your Email</label>
+                  <input type="email" class="contact-input" placeholder="sarah@company.com" required />
+                </div>
+                <div class="contact-input-group">
+                  <label class="contact-input-label">Message</label>
+                  <textarea class="contact-input" rows="3" placeholder="Tell me about your role or project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-coral mt-3">Send Message <i class="bi bi-send ms-1"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer text-center">
+      <div class="container">
+        <!-- FOOTER BRAND LOGO -->
+        <div class="d-inline-flex align-items-center gap-2 mb-3">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SB Logo">
+            <rect width="40" height="40" rx="9" fill="#0F172A"/>
+            <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="8.25" stroke="#00F2FE" stroke-width="1.5" stroke-opacity="0.9"/>
+            <path d="M17 12H12.5C11.1193 12 10 13.1193 10 14.5C10 15.8807 11.1193 17 12.5 17H15.5C16.8807 17 18 18.1193 18 19.5C18 20.8807 16.8807 22 15.5 22H11" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 12H25.5C26.8807 12 28 13.1193 28 14.5C28 15.8807 26.8807 17 25.5 17H21V12Z" stroke="#00F2FE" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 17H26C27.3807 17 28.5 18.1193 28.5 19.5C28.5 20.8807 27.3807 22 26 22H21V17Z" stroke="#00F2FE" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 12V22" stroke="#00F2FE" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="31.5" cy="8.5" r="2" fill="#6366F1"/>
+          </svg>
+          <span class="footer-title">Sanskar Bhandari</span>
+        </div>
+        <p class="small text-muted mb-4">Designed &amp; Built with engineering precision &middot; B.Tech CSE (AI &amp; ML) VIT Pune &middot; &copy; 2026</p>
+        <div>
+          <a href="mailto:sanskarbhandari01@gmail.com" class="footer-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          <a href="https://github.com" target="_blank" class="footer-social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- RESUME / CV MODAL -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="background: #0f172a; border: 1px solid rgba(0, 242, 254, 0.4);">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-white fw-bold d-flex align-items-center gap-2" id="resumeModalLabel">
+              <i class="bi bi-file-earmark-pdf-fill text-cyan fs-4"></i> Curriculum Vitae — Sanskar Bhandari
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 text-start">
+            <!-- CV DOCUMENT WRAPPER -->
+            <div class="cv-document-box p-4 rounded bg-dark border border-secondary">
+              <!-- HEADER -->
+              <div class="text-center pb-3 mb-4 border-bottom border-secondary">
+                <h2 class="text-white fw-bold mb-1">SANSKAR BHANDARI</h2>
+                <p class="text-muted small mb-1">Pune, Maharashtra, India &middot; <a href="mailto:sanskarbhandari01@gmail.com" class="text-cyan">sanskarbhandari01@gmail.com</a> &middot; B.Tech CSE (AI &amp; ML), VIT Pune</p>
+              </div>
+
+              <!-- SUMMARY -->
+              <div class="mb-4">
+                <h6 class="text-cyan text-uppercase font-mono fw-bold mb-2">SUMMARY</h6>
+                <p class="text-body small mb-0">Software-focused Computer Science student at VIT Pune with an 8.21 CGPA and hands-on experience developing full-stack applications, backend services, and AI-enabled software systems. Built projects using Java, C, C++, Python, JavaScript, TypeScript, React.js, Node.js, Express, FastAPI, MySQL, and Firebase, with experience applying data structures, object-oriented programming, databases, and AI/ML techniques to practical applications. Strong project exposure across software development, intelligent systems, computer vision, NLP, and IoT.</p>
+              </div>
+
+              <!-- EDUCATION -->
+              <div class="mb-4">
+                <h6 class="text-cyan text-uppercase font-mono fw-bold mb-2">EDUCATION</h6>
+                <div class="d-flex justify-content-between align-items-baseline">
+                  <strong class="text-white">Vishwakarma Institute of Technology, Pune</strong>
+                  <span class="font-mono text-muted small">2024–2028</span>
+                </div>
+                <p class="text-body small mb-0">B.Tech in Computer Science &amp; Engineering (AI &amp; ML) | CGPA: 8.21/10.0</p>
+              </div>
+
+              <!-- EXPERIENCE & RECOGNITION -->
+              <div class="mb-4">
+                <h6 class="text-cyan text-uppercase font-mono fw-bold mb-2">EXPERIENCE &amp; RECOGNITION</h6>
+                <div class="mb-2">
+                  <div class="d-flex justify-content-between align-items-baseline">
+                    <strong class="text-white">Artificial Intelligence Intern — Deevelo X &middot; Launched Global</strong>
+                    <span class="font-mono text-muted small">Jul 2025</span>
+                  </div>
+                  <p class="text-body small mb-0">&bull; Completed an AI Mentorship &amp; Internship Program with practical exposure to Artificial Intelligence concepts and machine-learning applications. Certificate ID: LED007-INT0032.</p>
+                </div>
+                <div>
+                  <strong class="text-white">Best UI Design — Infosys Springboard Virtual Internship 6.0</strong>
+                  <p class="text-body small mb-0">&bull; Recognized for designing and implementing an intuitive, accessible UI for the FileAI enterprise document-intelligence platform.</p>
+                </div>
+              </div>
+
+              <!-- TECHNICAL SKILLS -->
+              <div class="mb-4">
+                <h6 class="text-cyan text-uppercase font-mono fw-bold mb-2">TECHNICAL SKILLS</h6>
+                <p class="text-body small mb-1"><strong>Languages:</strong> Java, C, C++, Python (plus JavaScript, TypeScript)</p>
+                <p class="text-body small mb-1"><strong>Core CS:</strong> Data Structures &amp; Algorithms (DSA), Object-Oriented Programming (OOP)</p>
+                <p class="text-body small mb-0"><strong>Tools &amp; Platforms:</strong> Git, GitHub, VS Code, React.js, Node.js, Express, FastAPI, MySQL, Firebase</p>
+              </div>
+
+              <!-- PROJECT EXPERIENCE -->
+              <div class="mb-4">
+                <h6 class="text-cyan text-uppercase font-mono fw-bold mb-2">PROJECT EXPERIENCE</h6>
+                <div class="mb-3">
+                  <strong class="text-white">PulmoScan AI — Lung Cancer Detection System</strong> <span class="text-muted small font-mono">(React.js, Google Gemini, Computer Vision, Firebase)</span>
+                  <p class="text-body small mb-1">&bull; Developed an AI medical-imaging system for chest X-rays and CT scans with risk heatmaps, severity scoring, and patient-registry management.</p>
+                  <p class="text-body small mb-0">&bull; Research paper published at ICTEAH 2026, KJ Somaiya College.</p>
+                </div>
+                <div class="mb-3">
+                  <strong class="text-white">ScriptCare — AI-Powered Prescription Analyser</strong> <span class="text-muted small font-mono">(YOLOv8-Nano, TrOCR, BioClinicalBERT, FastAPI, React)</span>
+                  <p class="text-body small mb-1">&bull; Designed a five-stage pipeline covering prescription-region detection, handwriting OCR, medication NER, drug-database validation, and structured API output.</p>
+                  <p class="text-body small mb-0">&bull; Portfolio reports 91% drug accuracy and 0.87 F1 across a dataset of 37,822 COCO-format annotated prescription images and a 280K-entry drug database; research project under review at ICSCSD 2026.</p>
+                </div>
+                <div class="mb-3">
+                  <strong class="text-white">NEXORA Health — AI-Powered IoT Patient Monitoring System</strong> <span class="text-muted small font-mono">(ESP32, Python, FastAPI, Random Forest)</span>
+                  <p class="text-body small mb-0">&bull; Integrated ESP32 with MAX30102, MPU6050, and DHT11 sensors; streamed real-time data through Python serial communication to FastAPI and applied Random Forest anomaly detection for alerts. Patent published.</p>
+                </div>
+                <div class="mb-3">
+                  <strong class="text-white">LocalXplorer — Cultural Discovery PWA</strong> <span class="text-muted small font-mono">(React 18, TypeScript, Firebase, PWA)</span>
+                  <p class="text-body small mb-0">&bull; Built a Pune-focused cultural and mobility PWA covering heritage discovery, local gastronomy, metro routes, location intelligence, and offline support.</p>
+                </div>
+                <div>
+                  <strong class="text-white">UrbanNest Society Management</strong> <span class="text-muted small font-mono">(Node.js, Express, MySQL)</span>
+                  <p class="text-body small mb-0">&bull; Built a full-stack society-management system with role-based access, visitor tracking, and maintenance-fee management.</p>
+                </div>
+              </div>
+
+              <!-- ADDITIONAL PROJECTS -->
+              <div class="mb-4">
+                <h6 class="text-cyan text-uppercase font-mono fw-bold mb-2">ADDITIONAL PROJECTS</h6>
+                <p class="text-body small mb-0">&bull; Stock Market Analytics (C, Data Structures) &middot; Global EV Market Analysis (Python, Pandas) &middot; NexBank-OS Banking System (HTML, CSS, JS) &middot; Ministry of Finance Website (HTML, Bootstrap) &middot; Employee Management System (Java, Swing, MySQL) &middot; CPU Job Scheduling (C) &middot; Palm-Controlled Laser Pointer (Arduino, OpenCV) &middot; Fruit Ninja Pro Clone (Python, Pygame) &middot; India Travel Recommender (HTML, CSS, JS)</p>
+              </div>
+
+              <!-- RESEARCH, PUBLICATIONS & CERTIFICATION -->
+              <div class="mb-4">
+                <h6 class="text-cyan text-uppercase font-mono fw-bold mb-2">RESEARCH, PUBLICATIONS &amp; CERTIFICATION</h6>
+                <p class="text-body small mb-1">&bull; PulmoScan AI: Research Paper Published — ICTEAH 2026.</p>
+                <p class="text-body small mb-1">&bull; NEXORA Health: Patent Published.</p>
+                <p class="text-body small mb-1">&bull; ScriptCare: Research Project Under Review — ICSCSD 2026.</p>
+                <p class="text-body small mb-0">&bull; Mathematics for AI &amp; ML Developers: Udemy / Eduonix Learning Solutions — August 2025.</p>
+              </div>
+
+              <!-- CAREER FOCUS -->
+              <div>
+                <h6 class="text-cyan text-uppercase font-mono fw-bold mb-2">CAREER FOCUS</h6>
+                <p class="text-body small mb-0">Software Engineering &middot; Full-Stack Development &middot; Backend Development &middot; Full-Stack AI Applications</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-secondary">
+            <button class="btn btn-coral" onclick="window.print()"><i class="bi bi-printer me-1"></i> Print / Save CV as PDF</button>
+            <a href="mailto:sanskarbhandari01@gmail.com?subject=Inquiry%20from%20Portfolio%20CV" class="btn btn-outline-coral"><i class="bi bi-envelope me-1"></i> Contact Sanskar</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REUSABLE PROJECT DETAILS MODAL -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Project Case Study</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="projectModalBody">
+            <div class="row g-4">
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <h6 class="text-uppercase text-muted small fw-bold mb-1">Problem Statement</h6>
+                  <p id="modal-problem" class="mb-0 text-white"></p>
+                </div>
+                <div class="mb-3">
+                  <h6 class="text-uppercase text-muted small fw-bold mb-1">Proposed Solution</h6>
+                  <p id="modal-solution" class="mb-0 text-white"></p>
+                </div>
+                <div class="mb-3">
+                  <h6 class="text-uppercase text-muted small fw-bold mb-1">Key Features</h6>
+                  <p id="modal-features" class="mb-0 text-white"></p>
+                </div>
+                <div class="mb-3">
+                  <h6 class="text-uppercase text-muted small fw-bold mb-1">Technology Stack</h6>
+                  <p id="modal-stack" class="mb-0 text-coral font-mono small"></p>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <h6 class="text-uppercase text-muted small fw-bold mb-1">Academic Context</h6>
+                    <p id="modal-academic" class="small text-white"></p>
+                  </div>
+                  <div class="col-6">
+                    <h6 class="text-uppercase text-muted small fw-bold mb-1">Outcome / Status</h6>
+                    <p id="modal-outcome" class="small text-white"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-coral" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
